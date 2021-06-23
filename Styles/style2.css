@@ -1,0 +1,44 @@
+body {
+    background-image: url("p6.jpg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+.topnav {
+
+overflow: hidden;
+background-color:rgb(245, 229, 206);
+width: 80%;
+margin-left: 100px;
+}
+.topnav a {
+float: left;
+color: #0e0202;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 20px;
+}
+.topnav a:hover {
+background-color:rgb(5, 160, 88);
+color: black;
+}
+.topnav a.active {
+background-color:rgb(5, 160, 88) ;
+color: black;
+}
+
+h1{
+font-size: 30px;
+color: 	white;
+padding: 20px 20px;
+text-align: center;
+
+}
+.bd{
+color:rgb(26, 2, 58);
+text-align: center;
+padding-top: 10px;
+font-size: 18px;
+
+}     
