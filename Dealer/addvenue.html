@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .fei{
+            margin: 10px auto;
+            text-align: left;
+            box-shadow: 0 0 10px rgb(20, 19, 19);
+            width: 200px;
+            height: 25px;
+            background-color: #f2f2f2;
+        }
+        
+        button{
+            width: 200px;
+            height: 40px;
+            background-color: rgb(26, 2, 58);
+            color: #ffffff;
+            margin-top: 30px;
+        }
+        td{
+            font-size: 25px;
+            color: rgb(26, 2, 58);
+            margin-top: 10px;
+        }
+        body {
+        background-image: url("../Styles/p6.jpg");
+        background-color: #cccccc;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align:center; padding-top: 16px;">
+        <h1 style="color:rgb(26, 2, 58); font-size: 40px;">Add Venue</h1>
+        <form action="avenue.php" method="post" enctype="multipart/form-data">
+            <table align='center'>
+                <tr>
+                    <td><label>Name of the Venue : </label></td>
+                    <td><input type = "text" name = "vname" class="fei" placeholder="Venue name"></td>
+                </tr>
+                <tr>
+                    <td><label>Name of the Owner : </label></td>
+                    <td><input type = "text" name = "dname" class="fei" placeholder="Dealer name"></td>
+                </tr>
+                <tr>
+                    <td><label>Dealer id : </label></td>
+                    <td><input type = "number" name="id" class="fei" placeholder="dealer id"></td>
+                </tr>
+                <tr>
+                    <td><label>Location : </label></td>
+                    <td><input type = "text" name = "city" class="fei" placeholder="Location"></td>
+                </tr>
+                <tr>
+                    <td><label>Catering : </label></td>
+                    <td>
+                    <input type="radio" class="rd" value="Yes" name="catering">YES
+                    <input type="radio" class="rd" value="No" name="catering">NO
+                    </td>
+                </tr>
+                <tr >
+                    <td><label>Parking : </label></td>
+                    <td>
+                    <input type="radio" class="rd" value="Yes" name="parking">YES
+                    <input type="radio" class="rd" value="No" name="parking">NO
+                    </td>
+                </tr>
+                <tr>                    
+                    <td><label>Capacity : </label></td>
+                    <td><input type ="number" name="capacity" class="fei" placeholder="Capacity"></td>
+                </tr>
+                <tr>
+                    <td><label>Speciality : </label></td>
+                    <td>
+                    <input type="radio" class="rd" value="AC" name="speciality">AC
+                    <input type="radio" class="rd" value="Non AC" name="speciality">NON AC
+                    <input type="radio" class="rd" value="Outdoor" name="speciality">OUTDOOR
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Indoor Dining Room:</label></td>
+                    <td>
+                        <input type="radio" class="gen" value="Yes" name="dining">YES
+                        <input type="radio" class="gen" value="No" name="dining">NO
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Contact :</label></td>
+                    <td><input type="text" name = "contact" class="fei" placeholder="Contact"></td>
+                </tr>
+                <tr>
+                    <td><label>Address :</label></td>
+                    <td><textarea name="address" cols="40" rows="4" style="margin-top: 10px;box-shadow: 0 0 10px rgb(20, 19, 19);" placeholder="Enter address"></textarea></td>
+                </tr>
+                <tr>                    
+                    <td><label style="margin-top: 10px;">Upload Image :</label></td>
+                    <td><input type="file" name="image" id="image" style="margin-top: 10px;"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit" name="Add">Add</button></td>
+                </tr>
+            </table>
+        </form>
+        </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/style2.css">
+    <title>Document</title>
+    <style>
+        .fei{
+            margin: 10px auto;
+            text-align: center;
+            box-shadow: 0 0 10px #666;
+            width: 200px;
+            height: 25px;
+            background-color: #f2f2f2;
+        }
+        
+        button{
+            width: 200px;
+            height: 40px;
+            background-color: rgb(26, 2, 58);
+            margin-top: 30px;
+            color: #ffffff;
+        }
+        body {
+        background-image: url("../Styles/p6.jpg");
+        background-color: #cccccc;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+        td{
+            font-size: 25px;
+            color: rgb(26, 2, 58);
+        }
+    </style>
+</head>
+
+<body>
+    <div style="text-align: center; padding-top: 20px;">
+        <h1 style="color:rgb(26, 2, 58); font-size: 40px;">Dealer Registration</h1>
+        <form action="regdealer.php" method="POST">
+            <table align="center">
+            <tr>
+                <td>Dealername : </td>
+                <td><input type = "text" name = "username" class="fei" placeholder="dealername"></td>
+            </tr>
+            <tr>
+                <td>Password : </td>
+                <td><input type = "password" name = "password" class="fei" placeholder = "Password"></td>
+            </tr>
+            <tr>
+                <td>Confirm Password : </td>
+                <td><input type = "confirmpassword" name = "confirmpassword" class="fei" placeholder ="confirmpassword"></td>
+            </tr>
+            <tr>
+                <td>Email Id : </td>
+                <td><input type="email" name = "email" class="fei" placeholder="Email ID"></td>
+            </tr>
+            <tr>
+                <td>Date of Birth : </td>
+                <td><input type="date" name = "dob" class="fei" placeholder="mm/dd/yyyy"></td>
+            </tr>
+            <tr>
+                <td>Gender : </td>
+                <td>
+                    <input type="radio" class="gen" id="male" name="gender">male
+                    <input type="radio" class="gen" id="female" name="gender">Female
+                    <input type="radio" class="gen" id="other" name="gender">Other
+                </td>
+            </tr>
+            <tr>
+            <td>Address : </td>
+            <td><textarea name="address" rows="4" cols="50" style="margin-top: 10px;box-shadow: 0 0 10px #666;" placeholder="Address"></textarea></td>
+            </tr>
+            <tr>
+            <td>Mobile no :</td>
+            <td><input type="number" name = "contact" class="fei" placeholder="Mobile Number"></td>
+            </tr>
+            <tr>
+            <td></td>
+            <td><button type = "submit" name="submit">REGISTER</button></td>
+            </tr>
+            </table>
+        </form>
+        </div>
+</body>
+</html>
