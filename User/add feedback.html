@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/style2.css">
+    <title>Document</title>
+    <style>
+        .fei{
+            margin: 10px auto;
+            text-align: center;
+            box-shadow: 0 0 10px #666;
+            width: 200px;
+            height: 20px;
+            background-color: #f2f2f2;
+        }
+        button{
+            width: 200px;
+            height: 40px;
+            background-color: rgb(26, 2, 58);
+            color: #ffffff;
+            margin-top: 20px;
+        }
+        .gen{
+            margin: 10px auto;
+        }
+        td{
+            font-size: 20px;
+            color: rgb(26, 2, 58);
+        }
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <a href="home.html">Home</a>
+        <a href="search.html">Search</a>
+        <a class="active" href="add feedback.html">Add Feedback</a>
+        <a href="user.html">Logout</a>
+    </div>
+    <div class="bd">
+        <img src="../Styles/p5.jpg" width=400 height=200>
+        <p class="p1">Venue is the location at which an event takes place. It may refer to:<br>
+        Venue (law), the place a case is heard.<br>
+        Financial trading venue, a place or system where financial transactions can occur.<br>
+        Music venue, place used for a concert or musical performance.<br>
+        Sport venue, place used for a sporting event."</p>
+    </div>
+    <div style="text-align: center; padding-top: 20px;">
+    <h2 style="color:rgb(26, 2, 58); ">Add feedback</h2>
+    <form action="afeedback.php" method="post">
+        <table align="center">
+            <tr>
+                <td>Venue Name :</td>
+                <td><input type="text" name="vname" ></td>
+            </tr>
+            <tr>
+                <td>Feedback :</td>
+                <td><textarea name="feedback" cols="40" rows="4" style="margin-top: 10px;box-shadow: 0 0 10px rgb(20, 19, 19);" placeholder="Give your feedback"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type = "submit" name="submit">SUBMIT</button></td>
+            </tr>
+        </table>
+    </form>            
+</body>
+</html>

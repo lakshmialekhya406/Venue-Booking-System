@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/style2.css">
+    <title>Document</title>
+    <style>
+        .fei{
+            margin: 10px auto;
+            text-align: center;
+            box-shadow: 0 0 10px #666;
+            width: 200px;
+            height: 20px;
+            background-color: #f2f2f2;
+        }
+        button{
+            width: 200px;
+            height: 40px;
+            background-color: rgb(26, 2, 58);
+            color: #ffffff;
+        }
+        .gen{
+            margin: 10px auto;
+        }
+        td{
+            font-size: 20px;
+            color: rgb(26, 2, 58);
+        }
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <a href="home.html">Home</a>
+        <a class="active" href="search.html">Search</a>
+        <a href="add feedback.html">Add Feedback</a>
+        <a href="user.html">Logout</a>
+    </div>
+    <div class="bd">
+        <img src="../Styles/p5.jpg" width=400 height=200>
+        <p class="p1">Venue is the location at which an event takes place. It may refer to:<br>
+        Venue (law), the place a case is heard.<br>
+        Financial trading venue, a place or system where financial transactions can occur.<br>
+        Music venue, place used for a concert or musical performance.<br>
+        Sport venue, place used for a sporting event."</p>
+    </div>
+    <div style="text-align: center; padding-top: 20px;">
+    <h2 style="color:rgb(26, 2, 58); ">Search Venue</h2>
+    <form action="vesearch.php" method="post">
+        <table align="center">
+            <tr>
+                <td><label>Location:</label></td>
+                <td><input type="text" name="city" class="fei" placeholder="Location"></td>
+            </tr>
+            <tr>
+                <td><label>Capacity : </label></td>
+                <td><input type ="number" name="capacity" class="fei" placeholder="Capacity"></td>
+            </tr>
+            <tr>
+                <td><label>Speciality : </label></td>
+                <td>
+                    <input type="radio" class="rd" value="AC" name="speciality">AC
+                    <input type="radio" class="rd" value="Non AC" name="speciality">NON AC
+                    <input type="radio" class="rd" value="Outdoor" name="speciality">OUTDOOR
+                </td>
+            </tr>
+            <tr>    
+                <td><label>Catering:</label></td>
+                <td>
+                    <input type="radio" class="gen" value="Yes" name="catering">YES
+                    <input type="radio" class="gen" value="No" name="catering">NO
+                </td>
+            </tr>
+            <tr>
+                <td><label>Indoor Dining Room:</label></td>
+                <td>
+                    <input type="radio" class="gen" value="Yes" name="dining">YES
+                    <input type="radio" class="gen" value="No" name="dining">NO
+                </td>
+            </tr>
+            <tr>
+                <td><label>Parking:</label></td>
+                <td>
+                    <input type="radio" class="gen" value="Yes" name="parking">YES
+                    <input type="radio" class="gen" value="No" name="parking">NO
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><button type = "submit" name="submit">SEARCH</button></td>
+            </tr>
+        
+    </form>
+    </div>
+    
+</body>
+</html>
